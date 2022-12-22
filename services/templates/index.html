@@ -1,0 +1,218 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>HESIDESO</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="{% static 'assets/logo.png' %}" />
+        <!-- Core theme CSS (incluant Bootstrap)-->
+		<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/cs_style.css' %}">
+    </head>
+<body>
+
+	<header>
+
+		<div class="container-fluid" style="background-color: #ECECEC;">
+			<div class="logo-head"><img src="{% static 'assets/logo.png' %}"></div>
+		</div>
+
+		<nav class="navbar navbar-expand-lg nav-bar" id="mainNav">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		            <span class="navbar-toggler-icon"></span>
+		        </button>
+
+		        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav text-uppercase">
+                        <li class="nav-item"><a class="nav-link" href="{% url 'home' %}">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#produits">Nos produits</a></li>
+						<li class="nav-item"><a class="nav-link" href="{% url 'blog' %}">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#equipe">Equipe</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#vision">A propos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#footer">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+		</nav>
+
+	</header>
+
+	<section class="en-tete">
+			<div id="carouselExampleDark" class="carousel carousel-fade slide" data-bs-ride="carousel">
+			  <div class="carousel-inner">
+			    <div class="carousel-item active" data-bs-interval="4000">
+			      <img src="{% static 'assets/1.jpg' %}" class="d-block w-100" alt="...">
+			      <div class="carousel-caption">
+			        <h1 class="masthead-heading">Fibres naturelles végétales </h1>
+			        <p>Comme leur nom l’indique, les fibres végétales naturelles sont issues d’éléments végétaux comme des graines, des tiges, des feuilles ou de l’écorce 🌱</p>
+			        <a class="btn btn-rejoindre" href="#">Devenir partenaire</a>
+			      </div>
+			    </div>
+
+
+			    <div class="carousel-item" data-bs-interval="4000">
+			      <img src="{% static 'assets/2.jpg' %}" class="d-block w-100" alt="...">
+			      <div class="carousel-caption">
+			        <h1 class="masthead-heading">Plus naturelle que jamais</h1>
+			        <p>On dit qu’elles sont naturelles puisqu’on les trouve dans la nature contrairement aux fibres animales ou aux fibres synthétiques et artificielles (qui sont créées par l’homme). Elles servent de matière première pour un certain nombre d’utilisations dans des secteurs très variés comme la cosmétique</p>
+			        <a class="btn btn-rejoindre" href="#">Devenir partenaire</a>
+			      </div>
+			    </div>
+
+
+			    <div class="carousel-item" data-bs-interval="4000">
+			      <img src="{% static 'assets/3.jpg' %}" class="d-block w-100" alt="...">
+			      <div class="carousel-caption">
+			        <h1 class="masthead-heading">Un atout environnemental</h1>
+			        <p>les fibres végétales renouvelables «stockent le carbone toute la durée de vie du bâtiment, soit en moyenne une centaine d'années». Les isolants naturels présentent ainsi de nombreux atouts environnementaux : isolation thermique, faible énergie pour leur fabrication et recyclage.</p>
+			        <a class="btn btn-rejoindre" href="#">Devenir partenaire</a>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+	</section>
+
+	<section class="page-vision" id="vision">
+
+		<div class="container">
+			<div class="row">
+				<div class="col-lg pv-col1">
+					<h3><span class="soulignement-titre">01- Notre</span> vision</h3>
+					<p>Redonnez une dimension à l'utilisation des fibres végétales dans tout les domaines </p>
+					<a class="btn" href="#">En savoir plus</a>
+				</div>
+
+				<div class="col-lg pv-col2">
+					<a class="btn" href="#">Nos objectifs</a>
+					<p>Nous sommes oeuvrons chaque jour pour developper, ameliorer et donner une certaine dimension a l'explitation de la fibre blablablaa, promouvoir sa culture, son exportation a l'international et surtout sa  certaine dimension a l'explitation de la fibre blablablaa, promouvoir sa culture, son exportation a l'international et surtout sa  Nous sommes oeuvrons chaque jour pour developper, ameliorer et donner une certaine dimension a l'explitation de la fibre blablablaa, promouvoir sa culture, son exportation a l'international et surtout sa  certaine dimension a l'explitation de la fibre blablablaa, promouvoir sa culture, son exportation a l'international et surtout sa  </p>
+				</div>
+			</div>
+		</div>
+		
+	</section>
+
+	<section class="page-pourquoi-nous">
+
+		<div class="container">
+			<div class="row">
+				<div class="col-lg pn-col1">
+					<h3><span class="soulignement-titre">02- Pourq</span>uoi nous</h3>
+					<div class="container">
+						<div class="note">
+							<div class="subnote1">
+								<div class="subnoteitem">
+									<h3>+100ha</h3>
+									<p>Terres exploites</p>
+								</div>
+								<div class="subnoteitem">
+									<h3>+12 </h3>
+									<p>partenaires internationaux</p>
+								</div>
+								<div class="subnoteitem">
+									<h3>$100k+</h3>
+									<p>Revenus annuels</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<p>Nous sommes oeuvrons chaque jour pour developper, ameliorer et donner une certaine dimension a l'explitation de la fibre blablablaa, promouvoir sa culture, son exportation a l'international et surtout sa  a l'international et surtout sa  fdggsdsue jour pour developper, ameliorer et donner une certaine dimension a l'explitation de la fibre blablablaa,dssdgsgsgsgsgsgf</p>
+				</div>
+
+				<div class="col-lg pn-col2">
+					<div class="subpn-col2">
+					</div>
+					<a class="btn" href="#">Rejoindre</a>
+				</div>
+			</div>
+		</div>
+		
+	</section>
+
+	<section class="page-produits" id="produits">
+		<h3><span class="soulignement-titre">03- Nos pro</span>duits</h3>
+
+		<div class="container produits">
+			<div class="row">
+				{% for prd in produits %}
+				<div class="card produit col-lg">
+					<img src="{{ prd.image.url }}">
+					<h3>{{ prd.name }}</h3>
+					<p>{{ prd.description | truncatewords:13}}</p>
+					<a href="{% url 'produit' prd.slug %}" class="btn">Decouvrir</a>
+				</div>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+
+		<h3 class="equipe"><span class="soulignement-titre h3-equipe">04- Notre e</span>quipe</h3>
+	</section>
+
+	<section class="page-equipe" id="equipe">
+
+		<div class="container">
+
+			<div class="row">
+
+				{% for profil in profils %}
+				<div class="profilitem" style="
+												padding: 0px;
+												width: 300px;
+												height: 310px;
+												margin: 50px;
+												box-shadow: 0px 0px 2px;
+												background: url('{{ profil.image.url }}');
+												background-size: cover;
+												">
+					<div class="reso">
+						<a href="#"><img src="{% static 'assets/icone/twitter.png' %}"></a>
+						<a href="#"><img src="{% static 'assets/icone/facebook.png' %}"></a>
+						<a href="#"><img src="{% static 'assets/icone/linkedin.png' %}"></a>
+						<a href="#"><img src="{% static 'assets/icone/instagram.png' %}"></a>
+					</div>
+					<div class="profil-text">
+						<h4>{{ profil.titre }}</h4>
+						<p>{{ profil.name }}</p>
+					</div>
+				</div>
+
+				{% endfor %}
+
+			</div>
+		</div>	
+		
+	</section>
+
+
+	<footer id="footer">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col" style="text-align: center;">
+                    	<h4><u>Contact</u></h4>
+                    	<p>+237690359137 <br> info@hesideso.com <br> Garoua, cameroun Djamboutou</p>
+                    </div>
+                    <div class="col-md">
+                        <div class="icons">
+							<a href="#"><img src="{% static 'assets/icone/twitter.png' %}"></a>
+							<a href="#"><img src="{% static 'assets/icone/facebook.png' %}"></a>
+							<a href="#"><img src="{% static 'assets/icone/linkedin.png' %}"></a>
+							<a href="#"><img src="{% static 'assets/icone/instagram.png' %}"></a>
+						</div>
+						<p>Copyright © 2022. Tout droit reserves par HESIDESO</p>
+                    </div>
+                    <div class="col-md">
+                        <a class="link-light text-decoration-none" href="#">Conditions d'utilisation</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+<script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+</body>
+</html>
